@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Selector</title>
+
+    <link rel="stylesheet" href="css/colorSelector.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="dm-color">
+            <input type="button" id="dm-color-box" style="background-color: #000000" placeholder title="Selector">
+            <div class="dm-color-box">
+                <div class="saturation-box">
+                    <div class="saturation-picker"></div>
+                    <canvas class="saturation-canvas"></canvas>
+                </div>
+                <div class="strip-box">
+                    <div class="strip-picker"></div>
+                    <div class="strip-hue"></div>
+                </div>
+            </div>
+            <div class="pound-sign">
+                <span>#</span>
+                <div class="slash"></div>
+            </div>
+            <div class="dm-inputGroup">
+                <input type="text" id="dm-color-input" class placeholder="Enter HEX" title="HEX Input">
+                <svg class="dm-copy" width="32px" height="32px" viewBox="0 0 1024 1024" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M71.68 266.24c0-33.792 27.648-61.44 61.44-61.44h593.92c33.792 0 61.44 27.648 61.44 61.44v645.12c0 33.792-27.648 61.44-61.44 61.44H133.12c-33.792 0-61.44-27.648-61.44-61.44V266.24z"
+                        fill="transparent" />
+                    <path
+                        d="M727.04 204.8H133.12c-33.792 0-61.44 27.648-61.44 61.44v645.12c0 33.792 27.648 61.44 61.44 61.44h593.92c33.792 0 61.44-27.648 61.44-61.44V266.24c0-33.792-27.648-61.44-61.44-61.44z m-20.48 686.08H153.6V286.72h552.96v604.16z"
+                        fill="#565656" />
+                    <path
+                        d="M230.4 112.64c0-33.792 27.648-61.44 61.44-61.44h593.92c33.792 0 61.44 27.648 61.44 61.44v645.12c0 33.792-27.648 61.44-61.44 61.44h-20.48V133.12H230.4v-20.48z"
+                        fill="#4190ff" />
+                    <path
+                        d="M261.12 460.8c0-16.896 13.824-30.72 30.72-30.72h276.48c16.896 0 30.72 13.824 30.72 30.72v20.48c0 16.896-13.824 30.72-30.72 30.72H291.84c-16.896 0-30.72-13.824-30.72-30.72v-20.48zM261.12 660.48c0-16.896 13.824-30.72 30.72-30.72h184.32c16.896 0 30.72 13.824 30.72 30.72v20.48c0 16.896-13.824 30.72-30.72 30.72H291.84c-16.896 0-30.72-13.824-30.72-30.72v-20.48z"
+                        fill="#4190ff" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <script src="plugins/tinycolor-min.js"></script>
+    <script src="js/colorSelector.js"></script>
+</body>
+
+</html>
